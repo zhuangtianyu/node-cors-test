@@ -1,13 +1,13 @@
-#### 如何运行
+### 如何运行
 
 1. clone 项目到本地
 2. npm i
 3. node index.js
 4. open index.html
 
-#### cases
+### cases
 
-##### case.1 本地直接调用 http(s) 接口
+#### case.1 本地直接调用 http(s) 接口
 
 本地 file://some-path/index.html
 
@@ -15,13 +15,13 @@
 
 协议不同, 发生跨域。
 
-##### case.2 本地发布到线上 http 后, 调用 http(s) 接口跨域
+#### case.2 本地发布到线上 http 后, 调用 http(s) 接口跨域
 
 线上页面与接口协议不同, 或域名/端口不匹配 http(s) 接口规则。
 
 接口调用跨域。
 
-##### case.3 加入 node 层做一次中转
+#### case.3 加入 node 层做一次中转
 
 本地 file://some-path/index.html -> 调用 node 接口。
 
