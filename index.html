@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script>
+  // 直接请求接口会跨域
+  // axios.get('http://zhuangtianyu.com:1995/luck/article/detail/1012')
+
+  // 通过一层 node 处理跨域
+  axios
+    .get('http://localhost:3000/luck/article/detail/1012')
+    .then(response => {
+      document.write(JSON.stringify(response.data))
+    })
+    .catch(error => {
+      console.error(error.message)
+    })
+</script>
+</html>
